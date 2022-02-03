@@ -6,10 +6,8 @@
  * Repository   : https://github.com/agusmakmun/django-markdown-editor
 **/
 
-(function ($) {
-    if (!$) {
-        $ = django.jQuery;
-    }
+(function (martorJQuery) {
+    $ = martorJQuery.jQuery;
     $.fn.martor = function() {
         $('.martor').trigger('martor.init');
 
@@ -868,4 +866,4 @@
                 fixed.martor();
             });
         });
-})(jQuery);
+})(martorJQuery);
